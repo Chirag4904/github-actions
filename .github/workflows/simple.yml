@@ -1,0 +1,13 @@
+name: shell commands
+on : [push]
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echoing a string
+        run: echo "hello"
+      - name: multilne script
+        run: |
+          node -v 
+          npm -v
+          

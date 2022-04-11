@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  -webkit-perspective: 100px;
+          perspective: 100px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  min-height: 88vh;
+  width: 30rem;
+  border-radius: 30px;
+  padding: 0 5rem;
+  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.sneaker {
+  min-height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sneaker .circle {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(2, 0, 36, 0.5)), color-stop(25%, rgba(41, 63, 71, 0.75)), color-stop(50%, rgba(46, 80, 78, 0.5)), color-stop(75%, rgba(66, 95, 78, 0.75)), to(#626c4c));
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 0%, rgba(41, 63, 71, 0.75) 25%, rgba(46, 80, 78, 0.5) 50%, rgba(66, 95, 78, 0.75) 75%, #626c4c 100%);
+  z-index: 1;
+}
+
+.sneaker img {
+  width: 18rem;
+  z-index: 2;
+  -webkit-transform: translateZ(150px);
+          transform: translateZ(150px);
+}
+
+.info h1 {
+  font-size: 2.5rem;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+}
+
+.info .sizes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info .sizes button {
+  padding: 0.5rem 2rem;
+  background: none;
+  border: none;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+}
+
+.info .sizes .active {
+  background: #585858;
+  color: white;
+}
+
+.info .purchase {
+  margin-top: 5rem;
+}
+
+.info .purchase button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: #bd962a;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

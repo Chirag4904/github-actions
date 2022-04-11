@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // overflow-y: hidden;
+    // perspective: 100px;
+}
+
+.container {
+    // background-color: aqua;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // perspective: 1000;
+
+
+}
+
+.card {
+    perspective: 100px;
+    transform-style: preserve-3d;
+    min-height: 88vh;
+    width: 30rem;
+    border-radius: 30px;
+    padding: 0 5rem;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2) ;
+    
+    
+}
+
+.sneaker {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .circle {
+        position: absolute;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(41,63,71,0.75) 25%, rgba(46,80,78,0.5) 50%, rgba(66,95,78,.75) 75%, rgba(98,108,76,1) 100%);
+
+        z-index: 1;
+    }
+
+    img {
+        width: 18rem;
+        z-index: 2;
+        transform: translateZ(150px);
+        // transform: rotateY(180deg);
+    }
+}
+
+.info {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        padding: 2rem 0rem;
+        color: #585858;
+        font-weight: lighter;
+    }
+
+    .sizes {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            padding: 0.5rem 2rem;
+            background: none;
+            border: none;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #585858;      
+        }
+        .active {
+            background: #585858;
+            color: white;
+        }
+
+    }
+
+    .purchase {
+        margin-top: 5rem;
+
+        button{
+            width: 100%;
+            padding: 1rem 0rem;
+            background: #bd962a;
+            border-radius: 30px;
+            color: white;
+            border: none;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+    }
+}
